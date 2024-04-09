@@ -1,0 +1,114 @@
+@import "reset.css" layer(reset);
+
+@layer reset;
+
+:root {
+  /* font size @link https://utopia.fyi/type/calculator?c=320,16,1.333,1240,18,1.333,3,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+  --step--2: clamp(0.5628rem, 0.5383rem + 0.1223cqi, 0.6331rem);
+  --step--1: clamp(0.7502rem, 0.7176rem + 0.1631cqi, 0.844rem);
+  --step-0: clamp(1rem, 0.9565rem + 0.2174cqi, 1.125rem);
+  --step-1: clamp(1.333rem, 1.275rem + 0.2898cqi, 1.4996rem);
+  --step-2: clamp(1.7769rem, 1.6996rem + 0.3863cqi, 1.999rem);
+  --step-3: clamp(2.3686rem, 2.2656rem + 0.5149cqi, 2.6647rem);
+
+  /* flow space @link https://utopia.fyi/space/calculator?c=320,16,1.333,1240,18,1.333,3,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+  --space-3xs: clamp(0.25rem, 0.2283rem + 0.1087cqi, 0.3125rem);
+  --space-2xs: clamp(0.5rem, 0.4783rem + 0.1087cqi, 0.5625rem);
+  --space-xs: clamp(0.75rem, 0.7065rem + 0.2174cqi, 0.875rem);
+  --space-s: clamp(1rem, 0.9565rem + 0.2174cqi, 1.125rem);
+  --space-m: clamp(1.5rem, 1.4348rem + 0.3261cqi, 1.6875rem);
+  --space-l: clamp(2rem, 1.913rem + 0.4348cqi, 2.25rem);
+  --space-xl: clamp(3rem, 2.8696rem + 0.6522cqi, 3.375rem);
+  --space-2xl: clamp(4rem, 3.8261rem + 0.8696cqi, 4.5rem);
+  --space-3xl: clamp(6rem, 5.7391rem + 1.3043cqi, 6.75rem);
+
+  /* font weight */
+
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  /* main grid layout */
+  --padding-inline: 1rem;
+  --content-max-width: 100ch;
+  --breakout-max-width: 10ch;
+  --grid-almost-full-width-max-width: 10ch;
+
+  --full-width-size: minmax(var(--padding-inline), 1fr);
+  --grid-almost-full-width-size: minmax(
+    0,
+    var(--breakout-almost-full-width-max-width)
+  );
+  --breakout-size: minmax(0, var(--breakout-max-width));
+  --content-size: min(
+    100% - (var(--padding-inline) / 2),
+    var(--content-max-width)
+  );
+}
+
+[data-theme="dark"] {
+  --background-col: linear-gradient(
+    211deg,
+    #35403a 0%,
+    #181e1b 47.16%,
+    #0f1412 81.31%
+  );
+  --section-bgcol-1: hsla(147, 9%, 29%, 1);
+  --section-bgcol-2: hsla(147, 9%, 29%, 1);
+  --card-bgcol: hsla(150, 12%, 10%, 1);
+  --title-col-1: hsla(0, 0%, 85%, 1);
+  --title-col-2: hsla(101, 100%, 68%, 1);
+  --font-col: hsla(0, 0%, 85%, 1);
+  --decoration-col-1: hsla(148, 100%, 28%, 1);
+  --decoration-col-2: hsla(101, 100%, 68%, 1);
+}
+
+[data-theme="light"] {
+  --background-col: hsla(92, 100%, 95%, 1);
+  --section-col-1: linear-gradient(
+    88deg,
+    #f4ffeb 0%,
+    #d4dfb7 6.5%,
+    #b8c188 19.5%,
+    #9da65d 41.5%
+  );
+  --section-col-2: linear-gradient(97deg, #38382c 10.36%, #818170 75.15%);
+  --card-bgcol: hsla(92, 100%, 95%, 1);
+  --title-col-1: hsla(60, 12%, 20%, 1);
+  --title-col-2: hsla(60, 12%, 20%, 1);
+  --font-col: hsla(60, 12%, 20%, 1);
+  --decoration-col-1: hsla(68, 31%, 35%, 1);
+  --decoration-col-2: hsla(67, 29%, 51%, 1);
+}
+
+body {
+}
+
+.content {
+  display: grid;
+  grid-template-columns:
+    [full-width-start] var(--full-width-size)
+    [almost-full-width-start] var(--grid-almost-full-width-size)
+    [breakout-start] var(--breakout-size)
+    [content-start] var(--content-size) [content-end]
+    var(--breakout-size) [breakout-end]
+    var(--grid-almost-full-width-size) [almost-full-width-end]
+    var(--full-width-size) [full-width-end];
+}
+
+.content > * {
+  grid-column: content;
+}
+
+.content .breakout {
+  grid-column: breakout;
+}
+
+.content .almost-full-width {
+  grid-column: almost-full-width;
+}
+
+.content .full-width {
+  grid-column: full-width;
+}
