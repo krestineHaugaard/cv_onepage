@@ -1,4 +1,4 @@
-@import "reset.css" layer(reset);
+@import "./reset.css" layer(reset);
 
 @layer reset;
 
@@ -82,8 +82,8 @@
   --decoration-col-2: hsla(67, 29%, 51%, 1);
 }
 
-body {
-}
+/* body {
+} */
 
 .content {
   display: grid;
