@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import "../styles/reset.css";
 import "../styles/globals.css";
 import Header from "@/components/Header";
@@ -10,9 +12,14 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const [theme, setTheme] = useState("dark");
+  
+  const toggleTheme = (newTheme)=>{
+    setTheme((state)=>)
+  }
   return (
     <html lang="en">
-      <body>
+      <body data-theme="dark">
         <Header />
         {children}
         <Footer />

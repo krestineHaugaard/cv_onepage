@@ -1,9 +1,15 @@
-import Image from "next/image";
+import ImageAndNameShelf from "@/components/ImageAndNameShelf";
+import SkillsShelf from "@/components/SkillsShelf";
+import CardShelf from "@/components/CardShelf";
+import ImportantLinks from "@/components/ImportantLinks";
 
 export default function Home() {
   return (
     <main>
-      <h2>Mig</h2>
+      <ImageAndNameShelf />
+      <SkillsShelf />
+      <CardShelf />
+      <ImportantLinks />
     </main>
   );
 }
