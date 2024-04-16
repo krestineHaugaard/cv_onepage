@@ -27,20 +27,34 @@
 
   /* main grid layout */
   --padding-inline: 1rem;
-  --content-max-width: 100ch;
+  --content-max-width: clamp(0ch, 90%, 100ch);
   --breakout-max-width: 10ch;
-  --grid-almost-full-width-max-width: 10ch;
 
   --full-width-size: minmax(var(--padding-inline), 1fr);
-  --grid-almost-full-width-size: minmax(
-    0,
-    var(--breakout-almost-full-width-max-width)
-  );
-  --breakout-size: minmax(0, var(--breakout-max-width));
-  --content-size: min(
-    100% - (var(--padding-inline) / 2),
-    var(--content-max-width)
-  );
+  --breakout-size: minmax(0px, var(--breakout-max-width));
+  --content-size: min(var(--content-max-width));
+}
+
+.content {
+  display: grid;
+  grid-template-columns:
+    [full-width-start] var(--full-width-size)
+    [breakout-start] var(--breakout-size)
+    [content-start] var(--content-size) [content-end]
+    var(--breakout-size) [breakout-end]
+    var(--full-width-size) [full-width-end];
+}
+
+.content > * {
+  grid-column: content;
+}
+
+.content .breakout {
+  grid-column: breakout;
+}
+
+.content .full-width {
+  grid-column: full-width;
 }
 
 [data-theme="dark"] {
@@ -77,34 +91,6 @@ body {
   background-color: var(--background-col);
 }
 
-.content {
-  display: grid;
-  grid-template-columns:
-    [full-width-start] var(--full-width-size)
-    [almost-full-width-start] var(--grid-almost-full-width-size)
-    [breakout-start] var(--breakout-size)
-    [content-start] var(--content-size) [content-end]
-    var(--breakout-size) [breakout-end]
-    var(--grid-almost-full-width-size) [almost-full-width-end]
-    var(--full-width-size) [full-width-end];
-}
-
-.content > * {
-  grid-column: content;
-}
-
-.content .breakout {
-  grid-column: breakout;
-}
-
-.content .almost-full-width {
-  grid-column: almost-full-width;
-}
-
-.content .full-width {
-  grid-column: full-width;
-}
-
 .image_and_name_shelf {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -113,4 +99,33 @@ body {
 .img {
   border-radius: 1000px;
   max-width: 300px;
+}
+
+.style_outer_box {
+  border-width: 4px;
+  border-color: var(--decoration-col-1);
+  height: 100px;
+  width: clamp(200px, 50%, 500px);
+  display: grid;
+}
+
+.style_inner_box {
+  border-width: 4px;
+  border-color: var(--decoration-col-2);
+  margin: 1.5rem;
+  height: 50px;
+  width: clamp(75px, 50%, 350px);
+}
+
+.top {
+  border-style: solid hidden hidden solid;
+}
+
+.bottom {
+  border-style: hidden solid solid hidden;
+  place-self: end;
+}
+
+.element_grid {
+  display: grid;
 }
