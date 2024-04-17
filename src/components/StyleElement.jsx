@@ -1,6 +1,6 @@
 export default function TopStyleElement(props) {
   return (
-    <section className="breakout element_grid">
+    <section className={`${props.layout} breakout`}>
       <div className={props.outerBox}>
         <div className={props.innerBox}></div>
       </div>

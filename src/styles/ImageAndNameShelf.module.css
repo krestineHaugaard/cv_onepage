@@ -1,0 +1,9 @@
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.img {
+  border-radius: 1000px;
+  max-width: 300px;
+}

@@ -1,10 +1,11 @@
+import styles from "../styles/ImageAndNameShelf.module.css";
 import Image from "next/image";
 
 export default function ImageAndNameShelf() {
   return (
-    <section className="image_and_name_shelf">
+    <section className={styles.layout}>
       <Image
-        className="img"
+        className={styles.img}
         src="/images/pictureofcreator1.jpg"
         alt="Picture of Krestine Haugaard"
         width={917}

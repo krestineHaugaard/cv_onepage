@@ -1,0 +1,28 @@
+.outerBox {
+  border-width: 4px;
+  border-color: var(--decoration-col-1);
+  height: 100px;
+  width: clamp(200px, 50%, 500px);
+  display: grid;
+}
+
+.innerBox {
+  border-width: 4px;
+  border-color: var(--decoration-col-2);
+  margin: 1.5rem;
+  height: 50px;
+  width: clamp(75px, 50%, 350px);
+}
+
+.top {
+  border-style: solid hidden hidden solid;
+}
+
+.bottom {
+  border-style: hidden solid solid hidden;
+  place-self: end;
+}
+
+.layout {
+  display: grid;
+}
