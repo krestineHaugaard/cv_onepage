@@ -1,0 +1,20 @@
+.layout {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.link {
+  background-color: var(--section-bgcol-1);
+  border-radius: 5px;
+  padding: 5px 15px;
+}
+
+.icon {
+  color: var(--decoration-col-2);
+
+  &:hover {
+    color: var(--decoration-col-1);
+  }
+}
