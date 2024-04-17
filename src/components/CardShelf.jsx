@@ -1,9 +1,11 @@
+import styles from "../styles/CardShelf.module.css";
 import CardForCardShelf from "./CardForCardShelf";
 
 export default function CardShelf() {
   return (
-    <section className="card_shelf_style">
+    <section className={`${styles.shelf} full-width`}>
       <CardForCardShelf
+        data-theme="light"
         title="This CV onepager"
         semester="Github repository"
         text="I wanted to include the repository for this website, because its not only a visible CV containing information about me, my projects and skills, it is also an example of working with next.js and react, two skills i hope to improve  much more in the future."

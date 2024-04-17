@@ -71,14 +71,8 @@
 
 [data-theme="light"] {
   --background-col: hsla(92, 100%, 95%, 1);
-  --section-col-1: linear-gradient(
-    88deg,
-    #f4ffeb 0%,
-    #d4dfb7 6.5%,
-    #b8c188 19.5%,
-    #9da65d 41.5%
-  );
-  --section-col-2: linear-gradient(97deg, #38382c 10.36%, #818170 75.15%);
+  --section-bgcol-1: hsla(67, 29%, 51%, 1);
+  --section-bgcol-2: linear-gradient(97deg, #38382c 10.36%, #818170 75.15%);
   --card-bgcol: hsla(92, 100%, 95%, 1);
   --title-col-1: hsla(60, 12%, 20%, 1);
   --title-col-2: hsla(60, 12%, 20%, 1);

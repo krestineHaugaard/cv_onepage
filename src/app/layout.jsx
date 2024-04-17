@@ -1,7 +1,6 @@
 import "../styles/reset.css";
 import "../styles/globals.css";
 import Header from "@/components/Header";
-import StyleElement from "@/components/StyleElement";
 import Footer from "@/components/Footer";
 
 export const metadata = {
@@ -13,17 +12,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body data-theme="dark" className="content">
+      <body data-theme="dark">
         <Header />
-        <StyleElement
-          outerBox="style_outer_box top"
-          innerBox="style_inner_box top "
-        />
         {children}
-        <StyleElement
-          outerBox="style_outer_box bottom"
-          innerBox="style_inner_box bottom"
-        />
         <Footer />
       </body>
     </html>

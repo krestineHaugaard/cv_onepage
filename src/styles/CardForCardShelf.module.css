@@ -1,0 +1,6 @@
+.card {
+  background-color: var(--card-bgcol);
+  width: 200px;
+  border-radius: 20px;
+  scroll-snap-align: center;
+}
