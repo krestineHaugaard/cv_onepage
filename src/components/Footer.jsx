@@ -1,3 +1,3 @@
 export default function Footer() {
-  return <h2>Krestine H</h2>;
+  return <p className="alignCenter">© 2024 Krestine Haugaard</p>;
 }

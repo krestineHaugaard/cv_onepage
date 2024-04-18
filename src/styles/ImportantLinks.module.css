@@ -5,8 +5,14 @@
   list-style: none;
 }
 
-.link {
+.li {
   background-color: var(--section-bgcol-1);
+  color: var(--font-col);
   border-radius: 5px;
   padding: 5px 15px;
+  text-decoration: none;
+}
+
+.li:hover .link {
+  color: var(--decoration-col-2);
 }

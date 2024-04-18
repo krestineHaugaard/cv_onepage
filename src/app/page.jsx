@@ -9,16 +9,16 @@ export default function Home() {
   return (
     <main className="content">
       <StyleElement
-        outerBox={`${styles.outerBox} ${styles.top}`}
-        innerBox={`${styles.innerBox} ${styles.top}`}
+        outerBox={`${styles.outerBox} ${styles.topLeft}`}
+        innerBox={`${styles.innerBox} ${styles.topLeft}`}
       />
       <ImageAndNameShelf />
       <SkillsShelf />
       <CardShelf />
       <ImportantLinks />
       <StyleElement
-        outerBox={`${styles.outerBox} ${styles.bottom}`}
-        innerBox={`${styles.innerBox} ${styles.bottom}`}
+        outerBox={`${styles.outerBox} ${styles.bottomRight}`}
+        innerBox={`${styles.innerBox} ${styles.bottomRight}`}
         layout={styles.layout}
       />
     </main>
