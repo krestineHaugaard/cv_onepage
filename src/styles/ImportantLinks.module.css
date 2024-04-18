@@ -10,11 +10,3 @@
   border-radius: 5px;
   padding: 5px 15px;
 }
-
-.icon {
-  color: var(--decoration-col-2);
-
-  &:hover {
-    color: var(--decoration-col-1);
-  }
-}

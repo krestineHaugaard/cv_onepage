@@ -5,17 +5,17 @@ export default function ImportantLinks() {
   return (
     <ul className={styles.layout}>
       <li className={styles.link}>
+        <Image
+          src="/svgs/github.svg"
+          alt="Github icon"
+          width={16}
+          height={16}
+        />
         <a
           href="https://www.linkedin.com/in/krestine-haugaard-a80447264/"
           target="_blank"
         >
-          <Image
-            className={styles.icon}
-            src="/svgs/github.svg"
-            alt="Github icon"
-            width={917}
-            height={1056}
-          />
+          hej
         </a>
       </li>
       <li className={styles.link}>

@@ -10,6 +10,7 @@ export default function ImageAndNameShelf() {
         alt="Picture of Krestine Haugaard"
         width={917}
         height={1056}
+        priority={true}
       />
       <div>
         <h1>Krestine Haugaard</h1>
