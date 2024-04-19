@@ -89,24 +89,28 @@ body {
   font-weight: var(--font-regular);
 }
 
-.flow > * {
-  margin-block: var(--flow-space, 1rem);
+.flow > * + * {
+  margin-top: var(--flow-space, 1rem);
 }
 
 h1 {
   font-size: var(--step-4);
+  --flow-space: var(--space-xl);
 }
 
 h2 {
   font-size: var(--step-3);
+  --flow-space: var(--space-l);
 }
 
 h3 {
   font-size: var(--step-2);
+  --flow-space: var(--space-xs);
 }
 
 h4 {
-  font-size: var(--step-1);
+  font-size: var(--step-o);
+  --flow-space: var(--space-xs);
 }
 
 .alignCenter {
@@ -115,8 +119,18 @@ h4 {
 
 a {
   color: var(--decoration-col-2);
+  --flow-space: var(--space-l);
 }
 
 a:hover {
   color: var(--decoration-col-1);
+}
+
+header,
+footer {
+  --flow-space: var(--space-l);
+}
+
+section {
+  padding-block: var(--space-xl);
 }

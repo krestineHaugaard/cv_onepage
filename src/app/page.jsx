@@ -11,6 +11,7 @@ export default function Home() {
       <StyleElement
         outerBox={`${styles.outerBox} ${styles.topLeft}`}
         innerBox={`${styles.innerBox} ${styles.topLeft}`}
+        layout={styles.layout}
       />
       <ImageAndNameShelf />
       <SkillsShelf />

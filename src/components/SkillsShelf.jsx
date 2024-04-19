@@ -112,6 +112,7 @@ export default function SkillsShelf() {
       <StyleElement
         outerBox={`${styles.outerBox} ${styles.bottomLeft}`}
         innerBox={`${styles.innerBox} ${styles.bottomLeft}`}
+        layout={styles.layout}
       />
     </section>
   );

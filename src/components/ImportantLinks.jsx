@@ -2,8 +2,8 @@ import styles from "../styles/ImportantLinks.module.css";
 
 export default function ImportantLinks() {
   return (
-    <>
-      <h2 className="alignCenter">Contact information</h2>
+    <section>
+      <h3 className="alignCenter">Contact information</h3>
       <ul className={styles.layout}>
         <li>
           <a
@@ -35,6 +35,6 @@ export default function ImportantLinks() {
           Tlf: <span className={styles.link}>+45 30 25 09 85</span>
         </li>
       </ul>
-    </>
+    </section>
   );
 }

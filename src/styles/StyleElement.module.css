@@ -35,4 +35,5 @@
 
 .layout {
   display: grid;
+  margin-block: var(--space-l);
 }
