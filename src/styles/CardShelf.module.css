@@ -1,5 +1,5 @@
 .shelf {
-  background-color: var(--section-bgcol-1);
+  background-color: var(--section-bgcol-2);
   padding-inline: calc((100% - var(--content-max-width)) / 2);
   display: flex;
   gap: 1.5rem;

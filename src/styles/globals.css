@@ -66,19 +66,19 @@
   --card-bgcol: hsla(150, 12%, 10%, 1);
   --title-col-1: hsla(0, 0%, 85%, 1);
   --title-col-2: hsla(101, 100%, 68%, 1);
-  --font-col: hsla(0, 0%, 85%, 1);
+  --font-col: hsla(0, 0%, 80%, 1);
   --decoration-col-1: hsla(148, 100%, 28%, 1);
   --decoration-col-2: hsla(101, 100%, 68%, 1);
 }
 
 [data-theme="light"] {
-  --background-col: hsla(92, 100%, 95%, 1);
+  --background-col: rgb(243, 253, 237);
   --section-bgcol-1: hsla(67, 29%, 51%, 1);
-  --section-bgcol-2: linear-gradient(97deg, #38382c 10.36%, #818170 75.15%);
+  --section-bgcol-2: rgb(66, 66, 52);
   --card-bgcol: hsla(92, 100%, 95%, 1);
   --title-col-1: hsla(60, 12%, 20%, 1);
   --title-col-2: hsla(60, 12%, 20%, 1);
-  --font-col: hsla(60, 12%, 20%, 1);
+  --font-col: rgb(39, 39, 31);
   --decoration-col-1: hsla(68, 31%, 35%, 1);
   --decoration-col-2: hsla(67, 29%, 51%, 1);
 }
@@ -88,6 +88,7 @@ body {
   font-size: var(--step-0);
   color: var(--font-col);
   font-weight: var(--font-regular);
+  letter-spacing: 1px;
 }
 
 .flow > * + * {
@@ -96,22 +97,30 @@ body {
 
 h1 {
   font-size: var(--step-3);
+  color: var(--title-col-1);
   --flow-space: var(--space-xl);
+  font-weight: var(--font-semi-bold);
 }
 
 h2 {
   font-size: var(--step-2);
+  color: var(--title-col-1);
   --flow-space: var(--space-l);
+  font-weight: var(--font-semi-bold);
 }
 
 h3 {
   font-size: var(--step-1);
+  color: var(--title-col-1);
   --flow-space: var(--space-xs);
+  font-weight: var(--font-semi-bold);
 }
 
 h4 {
   font-size: var(--step-o);
+  color: var(--title-col-1);
   --flow-space: var(--space-3xs);
+  font-style: oblique;
 }
 
 .alignCenter {

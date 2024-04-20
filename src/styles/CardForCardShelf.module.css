@@ -6,7 +6,6 @@
   scroll-snap-align: center;
   padding: var(--space-m);
   & p {
-    font-size: var(--step--1);
     --flow-space: var(--space-m);
   }
 }

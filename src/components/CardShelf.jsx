@@ -5,13 +5,6 @@ export default function CardShelf() {
   return (
     <section className={`${styles.shelf} full-width`}>
       <CardForCardShelf
-        data-theme="light"
-        title="This CV onepager"
-        semester="Github repository"
-        text="I wanted to include the repository for this website, because its not only a visible CV containing information about me, my projects and skills, it is also an example of working with next.js and react, two skills i hope to improve  much more in the future."
-        link="https://github.com/krestineHaugaard/cv_onepage"
-      />
-      <CardForCardShelf
         title="To do list"
         semester="3. semester project"
         text="A small project made at the start of 3. semester with focus on vanilla java script. Its very simple, but it works and you can change theme."
@@ -46,6 +39,12 @@ export default function CardShelf() {
         semester="1. semester project"
         text="This was our first introduction to java script. Everything in this game is designed, drawn and coded by me. It could be optimized a lot, especially the java script code, but i still think is a pretty solid mini game for a 1. semester student. Also this game is 100% satire, its designed around the all scots and irishmen hate England joke."
         link="https://krestinehaugaard.github.io/animations_tema_1_semester_mmd/spil.html"
+      />
+      <CardForCardShelf
+        title="This CV onepager"
+        semester="Github repository"
+        text="I wanted to include the repository for this website, because its not only a visible CV containing information about me, my projects and skills, it is also an example of working with next.js and react, two skills i hope to improve  much more in the future."
+        link="https://github.com/krestineHaugaard/cv_onepage"
       />
     </section>
   );

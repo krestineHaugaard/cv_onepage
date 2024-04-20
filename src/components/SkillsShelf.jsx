@@ -67,7 +67,7 @@ export default function SkillsShelf() {
 
   return (
     <section>
-      <h2 className="alignCenter">My Skills in</h2>
+      <h2 className="alignCenter">Hands on experience with</h2>
       <div className={skillStyles.layout}>
         <button
           className={`${skillStyles.btn} ${
