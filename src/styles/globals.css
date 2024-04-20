@@ -1,12 +1,13 @@
 :root {
-  /* font size @link https://utopia.fyi/type/calculator?c=320,16,1.333,1240,18,1.333,3,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
-  --step--2: clamp(0.5628rem, 0.5383rem + 0.1223cqi, 0.6331rem);
-  --step--1: clamp(0.7502rem, 0.7176rem + 0.1631cqi, 0.844rem);
-  --step-0: clamp(1rem, 0.9565rem + 0.2174cqi, 1.125rem);
-  --step-1: clamp(1.333rem, 1.275rem + 0.2898cqi, 1.4996rem);
-  --step-2: clamp(1.7769rem, 1.6996rem + 0.3863cqi, 1.999rem);
-  --step-3: clamp(2.3686rem, 2.2656rem + 0.5149cqi, 2.6647rem);
-  --step-4: clamp(3.1573rem, 3.0201rem + 0.6864cqi, 3.552rem);
+  /* @link https://utopia.fyi/type/calculator?c=320,16,1.25,1920,18,1.414,4,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+  --step--2: clamp(0.5627rem, 0.6555rem + -0.0773vi, 0.64rem);
+  --step--1: clamp(0.7956rem, 0.8009rem + -0.0044vi, 0.8rem);
+  --step-0: clamp(1rem, 0.975rem + 0.125vi, 1.125rem);
+  --step-1: clamp(1.25rem, 1.1819rem + 0.3408vi, 1.5908rem);
+  --step-2: clamp(1.5625rem, 1.4251rem + 0.6868vi, 2.2493rem);
+  --step-3: clamp(1.9531rem, 1.7076rem + 1.2274vi, 3.1805rem);
+  --step-4: clamp(2.4414rem, 2.0302rem + 2.0559vi, 4.4973rem);
 
   /* flow space @link https://utopia.fyi/space/calculator?c=320,16,1.333,1240,18,1.333,3,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
   --space-3xs: clamp(0.25rem, 0.2283rem + 0.1087cqi, 0.3125rem);
@@ -94,17 +95,17 @@ body {
 }
 
 h1 {
-  font-size: var(--step-4);
+  font-size: var(--step-3);
   --flow-space: var(--space-xl);
 }
 
 h2 {
-  font-size: var(--step-3);
+  font-size: var(--step-2);
   --flow-space: var(--space-l);
 }
 
 h3 {
-  font-size: var(--step-2);
+  font-size: var(--step-1);
   --flow-space: var(--space-xs);
 }
 

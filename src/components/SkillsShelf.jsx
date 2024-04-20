@@ -108,7 +108,9 @@ export default function SkillsShelf() {
         innerBox={`${styles.innerBox} ${styles.topRight}`}
         layout={styles.layout}
       />
-      <ul className={skillStyles.ul}>{mySkill}</ul>
+      <div className={skillStyles.container}>
+        <ul className={skillStyles.ul}>{mySkill}</ul>
+      </div>
       <StyleElement
         outerBox={`${styles.outerBox} ${styles.bottomLeft}`}
         innerBox={`${styles.innerBox} ${styles.bottomLeft}`}

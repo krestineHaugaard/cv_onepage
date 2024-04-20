@@ -2,7 +2,7 @@ import styles from "../styles/ImportantLinks.module.css";
 
 export default function ImportantLinks() {
   return (
-    <section>
+    <section className={styles.container}>
       <ul className={styles.layout}>
         <li>
           <a

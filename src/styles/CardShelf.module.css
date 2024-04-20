@@ -13,3 +13,15 @@
     flex: 1 0 50%;
   }
 }
+
+@media (max-width: 800px) {
+  .shelf {
+    background-color: var(--section-bgcol-1);
+    padding-inline: calc((100% - var(--content-max-width)) / 2);
+    display: flex;
+    gap: 1.5rem;
+    & > * {
+      flex: 1 0 85%;
+    }
+  }
+}

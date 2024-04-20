@@ -1,10 +1,14 @@
+.container {
+  container: list / inline-size;
+  background-color: var(--section-bgcol-1);
+}
+
 .layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-inline: calc((100% - var(--content-max-width)) / 2);
-  background-color: var(--section-bgcol-1);
 
-  justify-items: center;
+  place-items: center;
 }
 
 .img {
@@ -12,14 +16,12 @@
   max-width: 300px;
 }
 
-/* .item1 {
-  margin-top: -5rem;
-} */
-
-.item2 {
-  align-self: center;
-}
-
 .inline {
   max-width: 35ch;
+}
+
+@container list (width < 800px) {
+  .layout {
+    gap: 1rem;
+  }
 }

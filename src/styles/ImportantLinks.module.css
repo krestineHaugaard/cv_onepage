@@ -1,3 +1,7 @@
+.container {
+  container: list / inline-size;
+}
+
 .layout {
   display: flex;
   justify-content: space-around;
@@ -16,4 +20,11 @@
 
 .li:hover .link {
   color: var(--decoration-col-2);
+}
+
+@container list (width < 800px) {
+  .layout {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }

@@ -7,7 +7,7 @@ import styles from "../styles/StyleElement.module.css";
 
 export default function Home() {
   return (
-    <main className="content">
+    <main className="content ">
       <StyleElement
         outerBox={`${styles.outerBox} ${styles.topLeft}`}
         innerBox={`${styles.innerBox} ${styles.topLeft}`}
