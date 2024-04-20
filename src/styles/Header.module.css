@@ -1,0 +1,14 @@
+.ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.link {
+  color: var(--font-col);
+  font-size: var(--step--1);
+}

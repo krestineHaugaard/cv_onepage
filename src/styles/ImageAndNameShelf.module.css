@@ -2,8 +2,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-inline: calc((100% - var(--content-max-width)) / 2);
-  gap: clamp(1rem, 50%, 3rem);
   background-color: var(--section-bgcol-1);
+
+  justify-items: center;
 }
 
 .img {
@@ -11,13 +12,12 @@
   max-width: 300px;
 }
 
-.item1 {
-  place-self: center end;
+/* .item1 {
   margin-top: -5rem;
-}
+} */
 
 .item2 {
-  place-self: center start;
+  align-self: center;
 }
 
 .inline {

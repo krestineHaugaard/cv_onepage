@@ -3,7 +3,6 @@ import styles from "../styles/ImportantLinks.module.css";
 export default function ImportantLinks() {
   return (
     <section>
-      <h3 className="alignCenter">Contact information</h3>
       <ul className={styles.layout}>
         <li>
           <a
@@ -12,7 +11,7 @@ export default function ImportantLinks() {
             href="https://www.linkedin.com/in/krestine-haugaard-a80447264/"
             target="_blank"
           >
-            My <span className={styles.link}>Linked In</span>
+            My <span className={styles.link}>Linkedin</span>
           </a>
         </li>
         <li>

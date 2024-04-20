@@ -2,22 +2,23 @@
   display: flex;
   justify-content: center;
   gap: 1rem;
+  margin-block: var(--space-xl);
 }
 
 .btn {
   border-style: solid;
   border-width: 4px;
   border-radius: 10px;
-  border-color: var(--decoration-col-2);
+  border-color: var(--decoration-col-1);
   padding: 5px 15px;
 }
 
 .btn:hover {
-  border-color: var(--decoration-col-1);
+  border-color: var(--decoration-col-2);
 }
 
 .btn.active {
-  border-color: var(--decoration-col-1);
+  border-color: var(--decoration-col-2);
 }
 
 .ul {

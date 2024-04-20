@@ -1,5 +1,5 @@
 .outerBox {
-  border-width: 4px;
+  border-width: 5px;
   border-color: var(--decoration-col-1);
   height: 100px;
   width: clamp(200px, 30%, 500px);
@@ -7,7 +7,7 @@
 }
 
 .innerBox {
-  border-width: 4px;
+  border-width: 5px;
   border-color: var(--decoration-col-2);
   margin: 1.5rem;
   height: 50px;
@@ -35,5 +35,4 @@
 
 .layout {
   display: grid;
-  margin-block: var(--space-l);
 }

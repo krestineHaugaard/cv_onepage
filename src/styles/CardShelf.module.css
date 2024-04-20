@@ -2,9 +2,11 @@
   background-color: var(--section-bgcol-1);
   padding-inline: calc((100% - var(--content-max-width)) / 2);
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+  scrollbar-color: var(--decoration-col-2) var(--background-col);
   scroll-snap-align: start;
 
   & > * {
