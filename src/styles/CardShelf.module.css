@@ -21,7 +21,7 @@
     display: flex;
     gap: 1.5rem;
     & > * {
-      flex: 1 0 85%;
+      flex: 1 0 75%;
     }
   }
 }

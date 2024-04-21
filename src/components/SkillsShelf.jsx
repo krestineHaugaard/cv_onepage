@@ -67,7 +67,7 @@ export default function SkillsShelf() {
 
   return (
     <section>
-      <h2 className="alignCenter">Hands on experience with</h2>
+      <h2 className="alignCenter">Hands on experience</h2>
       <div className={skillStyles.layout}>
         <button
           className={`${skillStyles.btn} ${
@@ -78,7 +78,7 @@ export default function SkillsShelf() {
             setActive(1);
           }}
         >
-          Codeing
+          Coding
         </button>
         <button
           className={`${skillStyles.btn} ${
@@ -89,7 +89,7 @@ export default function SkillsShelf() {
             setActive(2);
           }}
         >
-          Programs
+          Software
         </button>
         <button
           className={`${skillStyles.btn} ${
@@ -100,7 +100,7 @@ export default function SkillsShelf() {
             setActive(3);
           }}
         >
-          Tecnical methods
+          Technical Methods
         </button>
       </div>
       <StyleElement
