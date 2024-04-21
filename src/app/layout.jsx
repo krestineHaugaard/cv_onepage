@@ -10,10 +10,13 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const theme = (e) => {
+    console.log("is this working", e);
+  };
   return (
     <html lang="en">
-      <body data-theme="dark">
-        <Header />
+      <body data-theme="">
+        <Header onChange={theme} />
         {children}
         <Footer />
       </body>
