@@ -5,6 +5,18 @@ export default function CardShelf() {
   return (
     <section className={`${styles.shelf} full-width`}>
       <CardForCardShelf
+        title="Frontend examination"
+        semester="3. semester project"
+        text="This is my 3. semester examination project. We where asked to design and program a web aplication for a fictive festival, this is my webite"
+        link="https://3-semester-eksamen-foofest.vercel.app/"
+      />
+      <CardForCardShelf
+        title="Frontend examination prototype"
+        semester="3. semester prototype"
+        text="This is my 3. semester examination project. We where asked to design and program a web aplication for a fictive festival, this is my design file"
+        link="https://www.figma.com/design/G45yYC5bkl7R3gDXtJiicj/Design-fil?node-id=1-2&t=X2ctyqjEn3YQ2PF8-1"
+      />
+      <CardForCardShelf
         title="To do list"
         semester="3. semester project"
         text="A small project made at the start of 3. semester with focus on vanilla java script. Its very simple, but it works and you can change the theme."
