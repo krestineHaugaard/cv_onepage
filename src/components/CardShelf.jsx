@@ -5,6 +5,12 @@ export default function CardShelf() {
   return (
     <section className={`${styles.shelf} full-width`}>
       <CardForCardShelf
+        title="Final exam"
+        semester="4. semester project"
+        text="For my finals i teamed up with the Invisible Walls, creating a redesign on their company website"
+        link="https://invisible-walls.netlify.app/"
+      />
+      <CardForCardShelf
         title="Frontend examination"
         semester="3. semester project"
         text="This is my 3. semester examination project. We where asked to design and program a web aplication for a fictive festival, this is my webite"

@@ -16,7 +16,7 @@ export default function ImageAndNameShelf() {
         <div className={`${styles.item2} flow`}>
           <h1>Krestine Haugaard</h1>
           <p className={styles.inline}>
-            Studying multimedia design with an elective in frontend
+            Multimedia designer with an elective in frontend
           </p>
         </div>
       </div>
