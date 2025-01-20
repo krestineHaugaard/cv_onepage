@@ -7,7 +7,7 @@ export default function CardShelf() {
       <CardForCardShelf
         title="Final exam"
         semester="4. semester project"
-        text="For my finals i teamed up with the Invisible Walls, creating a redesign on their company website"
+        text="For my finals i teamed up with the Invisible Walls, creating a redesign on their company website. They wanted more fun and visual connection with their newest game"
         link="https://invisible-walls.netlify.app/"
       />
       <CardForCardShelf
